@@ -1,1 +1,1 @@
-include create_jupyter_git/repo_template/*
+include create_jupyter_git/repo_template/**/*
