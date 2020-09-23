@@ -1,6 +1,6 @@
-# Jupyter Git Filters
+# Create Jupyter Git
 
-A CLI command that generates a fresh Git Repository with files and configs to optimize version control for Jupyter Notebooks
+A CLI command that generates a fresh Git repository with files and configs to optimize version control for Jupyter Notebooks
 
 ## Description
 
@@ -29,6 +29,8 @@ Run the CLI and specify in the path to where you want your **NEW** Git repositor
 ```bash
 create-jupyter-git <new repository path>
 ```
+
+This repository will have a `.gitignore` to ensure checkpoints aren't versioned. It also creates a `.gitattributes` with a configuration for filtering and then adds `.git/config` values to utilize the Python scripts that handle the filtering via `git filter clean`.
 
 ### Start Jupyter
 
