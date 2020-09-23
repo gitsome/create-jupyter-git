@@ -40,8 +40,6 @@ def generate_repo(directoryname):
         return
 
     # copy the repo template over
-    print(repo_template_path)
-    print(target_directory_path)
     shutil.copytree(repo_template_path, target_directory_path, dirs_exist_ok=True)
     
     # make our magic script executable

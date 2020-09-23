@@ -92,3 +92,15 @@ Next generate the distribution files
 ```bash
 python setup.py sdist bdist_wheel
 ```
+
+Validate the package
+
+```bash
+twine check dist/*
+```
+
+Upload the package for publication
+
+```bash
+twine upload dist/*
+```
