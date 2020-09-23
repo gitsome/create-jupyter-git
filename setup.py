@@ -15,7 +15,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='create-jupyter-git',
-    version='1.0',
+    version='0.0.1',
     description='A CLI command that generates a fresh Git Repository with files and configs to optimize version control for Jupyter Notebooks',
     long_description=long_description,
     long_description_content_type="text/markdown",

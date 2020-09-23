@@ -76,3 +76,19 @@ You can create directories, notebooks, and fill your notebooks with wonderful co
 If you push up to a remote repository like GitHub, you will see that the output fields in your notebooks are empty! Great!
 
 You will also notice GitHub does some cool magic to re-generate the output in a preview format for you when you view a `*.ipynb` file. So you can still see the output in GitHub without storing it in your source. Neat!
+
+# Development
+
+## Publishing
+
+First bump the version
+
+```bash
+bumpversion --current-version x.x.x <major | minor | patch> setup.py create_jupyter_git/__init__.py
+```
+
+Next generate the distribution files
+
+```bash
+python setup.py sdist bdist_wheel
+```
